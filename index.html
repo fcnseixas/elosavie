@@ -183,6 +183,16 @@
     }
     footer a:hover { color: rgba(255,255,255,.5); }
 
+    /* ─── MOBILE ─── */
+    @media (max-width: 640px) {
+      html, body { overflow: hidden; height: 100%; }
+      .logo { width: clamp(110px, 32vw, 160px); }
+      footer {
+        justify-content: center;
+        padding: 0 24px;
+      }
+    }
+
     /* ─── ANIMATIONS ─── */
     @keyframes fadeDown {
       from { opacity: 0; transform: translateY(-18px); }
